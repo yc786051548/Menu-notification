@@ -1,0 +1,11 @@
+{
+  "dingtalk": {
+    "webhook": "",
+    "secret": "",
+    "keyword": "菜单"
+  },
+  "holiday_api": "https://timor.tech/api/holiday/info/",
+  "skip_holiday": true,
+  "skip_workday_makeup": true,
+  "log_dir": "logs"
+}
