@@ -216,8 +216,9 @@ def send_dingtalk(webhook: str, title: str, text: str, logger) -> bool:
     try:
         with request.urlopen(req, timeout=10) as resp:
             data = json.loads(resp.read().decode("utf-8"))
-        if data.get("errcode") == 0:
-            logger("钉钉推送成功")
+        # 自定义机器人返回 {errcode:0,...}；自动化机器人返回 {success:true,data:true}
+        if data.get("errcode") == 0 or data.get("success") is True:
+            logger(f"钉钉推送成功: {data}")
             return True
         logger(f"钉钉返回错误: {data}")
         return False
