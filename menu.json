@@ -1,6 +1,6 @@
 {
   "_comment": "PaddleOCR 3.x（默认 PP-OCR 引擎）双锚点法识别。主=靠墙/靠窗，兜底=周X表头，EXACT_NOISE 过滤品类/辣度，缺数重扫 fuzzy 去重 单字按 cx 合并。早12/午14/晚14 为预期值。",
-  "week_of": "2026-09-14",
+  "week_of": "2026-09-21",
   "floors": {
     "7F": {
       "monday": {
